@@ -1,0 +1,38 @@
+<script>
+    function parseIntTest() {
+        var s = "123456789999",
+            time = new Date();
+        for (var i = 0; i < 100000000; i++) {
+            parseInt(s, 10);
+        }
+        var cost = new Date() - time;
+        console.log("共耗时：" + cost + "ms");
+    }
+    function bitShiftTest() {
+        var s = "123456789999",
+            time = new Date();
+        for (var i = 0; i < 100000000; i++) {
+            s >> 0;
+        }
+        var cost = new Date() - time;
+        console.log("共耗时：" + cost + "ms");
+    }
+    function parseIntTestWithoutBit() {
+        var s = "123456789999",
+            time = new Date();
+        for (var i = 0; i < 100000000; i++) {
+            parseInt(s);
+        }
+        var cost = new Date() - time;
+        console.log("共耗时：" + cost + "ms");
+    }
+    function numberTest() {
+        var s = "123456789999",
+            time = new Date();
+        for (var i = 0; i < 100000000; i++) {
+            Number(s);
+        }
+        var cost = new Date() - time;
+        console.log("共耗时：" + cost + "ms");
+    }
+</script>
