@@ -5,7 +5,7 @@
   * `number`
   * `boolean`
   * `null`
-  * `undefined`
+  * `undefined`  
 ```js
 var foo = 1,
     bar = foo;
@@ -190,7 +190,7 @@ var isJedi = getProp('jedi');
 ***
 ## 变量
 * 总是使用 var 来声明变量，如果不这么做将导致产生全局变量，我们要避免污染全局命名空间。
-  ### *注 ：在已知自己的js代码会被编译为ES5的情况下，应该用const和let代替var，贸然使用ES6语法可能会造成浏览器无法解析。*
+  ### *注：在已知自己的js代码会被编译为ES5的情况下，应该用const和let代替var，贸然使用ES6语法可能会造成浏览器无法解析。*
 ```js
 // bad
 superPower = new SuperPower();

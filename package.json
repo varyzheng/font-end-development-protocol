@@ -1,0 +1,28 @@
+{
+  "name": "front-end-development-protocol",
+  "version": "1.0.0",
+  "description": "前端开发规约",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-markdown-github-style": "^1.0.3",
+    "gulp-markdown-it": "^0.1.1",
+    "gulp-webserver": "^0.9.1",
+    "markdown-it": "^8.4.0",
+    "marked": "^0.3.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varyzheng/front-end-development-protocol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varyzheng/front-end-development-protocol/issues"
+  },
+  "homepage": "https://github.com/varyzheng/front-end-development-protocol#readme"
+}
