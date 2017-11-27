@@ -5,13 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "csslint-stylish": "0.0.6",
     "gulp": "^3.9.1",
-    "gulp-markdown-github-style": "^1.0.3",
-    "gulp-markdown-it": "^0.1.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-jshint": "^2.0.4",
     "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.5",
-    "markdown-it": "^8.4.0",
-    "marked": "^0.3.6"
+    "jshint-stylish": "^2.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,8 +1,10 @@
 var gulp = require('gulp');
 var webserver = require('gulp-webserver');
-var markdown = require ('gulp-markdown-it');
+var jshint = require('gulp-jshint');
+var csslint = require('gulp-csslint');
+var jsstylish = require('jshint-stylish');
 
-gulp.task('webserver', ['compileMarkdown'], function() {
+gulp.task('webserver', ['jslint','csslint'], function() {
     gulp.src('./')
     .pipe(webserver({
         livereload: true,
@@ -11,10 +13,17 @@ gulp.task('webserver', ['compileMarkdown'], function() {
     }));
 });
 
-gulp.task('compileMarkdown', function () {
-    return gulp.src('**/*.md')
-        .pipe(markdown())
-        .pipe(gulp.dest('dist'));
+gulp.task('jslint', function() {
+    return gulp.src('./src/**/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter(jsstylish));
 });
 
-gulp.watch('./**/*.md', ['compileMarkdown']);
+gulp.task('csslint', function() {
+    gulp.src('./src/**/*.css')
+        .pipe(csslint())
+        .pipe(csslint.formatter(require('csslint-stylish')));
+});
+
+gulp.watch('./src/**/*.js', ['jslint']);
+gulp.watch('./src/**/*.css', ['csslint']);

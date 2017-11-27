@@ -1,0 +1,48 @@
+{
+    "bitwise": true,    //禁止位运算
+    "curly": true,      //必须加大括号
+    "eqeqeq": true,     //禁用 ==和!=，只能用===和!==
+    "esversion": 5,     //ECMAScript version
+    "forin": true,      //obj.hasOwnProperty(key)
+    "freeze": true,     //禁止重写原生类的原型 Array.prototype.count = function(value){ return 4; }
+    "funcscope": true, //为true的话不警告使用域外定义的变量
+    "futurehostile": true,  //检查是否有后面版本JavaScript用到的标识符
+
+    "iterator": true,   //禁用__iterator__属性 
+    "latedef": true,    //变量在使用前必须声明
+    "maxerr": 20,       //检查最大错误数
+    "maxparams": 10,    //最大参数个数
+    "maxstatements": 100,    //每个方法最大行数，内部函数声明算是一行
+    "noarg": true,      //no arguments.caller, arguments.callee
+    "nocomma": true,    //禁用逗号操作符
+    "nonbsp": true,     //This option warns about "non-breaking whitespace" characters. These characters can be entered with option-space on Mac computers and have a potential of breaking non-UTF8 web pages.
+    "nonew": true,      //不能只new不保存 var inst = new MyClass();
+    //"notypeof": true  保持默认
+    "shadow": "inner",  //变量重复定义，inner, outer, false, true
+    "singleGroups": true,   //delete(obj.attr); // Warning: Unnecessary grouping operator. 分组操作符
+    "strict": true,     //方法级别启用严格模式
+    "undef": true,      //未定义变量不能使用，除非在global中声明
+    "unused": true,     //定义的变量必须使用
+    "predef": [ "MY_GLOBAL" ],
+    "varstmt": true,    //var => let，const
+    //----------------------------------
+    "asi": false,        //必须使用分号
+    "boss": false,
+    "debug": false,
+    "elision": false,   //[1,,,4,,,7]
+    "eqnull": true,     //允许 == null
+    "evil":false,       //允许eval
+    "expr":false,       //赋值和方法调用允许表达式
+    "lastsemic": false, //单行末尾可以省略分号
+    "loopfunc": false,  //允许循环中定义函数
+    "moz": false,       //for Firefox
+    "noyield": false,   //允许发生器中没有yield语句
+    "plusplus": false,  //禁止++ and --
+    "proto":false,      //允许__proto__
+    "scripturl": false, //url, javascript:
+    "supernew": false,  //new function(){}, new Object
+    "validthis": false, //严格模式下非构造函数内可以使用this
+    "withstmt": false,  //允许使用with语句
+    
+    "devel":true
+}
