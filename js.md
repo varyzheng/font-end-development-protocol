@@ -198,7 +198,7 @@ superPower = new SuperPower();
 // good
 var superPower = new SuperPower();
 ```
-* 使用一个 var 以及新行声明多个变量，缩进4个空格。
+* 使用一个 var 以及新行声明多个变量，缩进2个空格。
 ```js
 // bad
 var items = getItems();
@@ -207,8 +207,8 @@ var dragonball = 'z';
 
 // good
 var items = getItems(),
-    goSportsTeam = true,
-    dragonball = 'z';
+  goSportsTeam = true,
+  dragonball = 'z';
 ```
 * 在作用域顶部声明变量，避免变量声明和赋值引起的相关问题。
 ```js
@@ -411,11 +411,11 @@ function Calculator() {
 ***
 ## 空白
 * 缩进、格式化能帮助团队更快得定位修复代码BUG.
-* 将tab设为4个空格
+* 将tab设为2个空格
 ```js
 // bad
 function() {
-∙∙var name;
+∙∙∙∙var name;
 }
 
 // bad
@@ -425,7 +425,7 @@ function() {
 
 // good
 function() {
-∙∙∙∙var name;
+∙∙var name;
 }
 ```
 * 大括号前放一个空格
